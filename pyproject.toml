@@ -1,0 +1,30 @@
+[tool.poetry]
+# TODO change name
+name = "python-app"
+version = "0.17.3"
+description = ""
+# TODO change author
+authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4"
+black = "^21.4b1"
+isort = "^5.8.0"
+
+[tool.poetry.scripts]
+# TODO it is a good ideia change the 
+# app: The entrypoint to the CLI 
+#      it is what you will need to execute in the terminal 
+#      to execute the main function inside python_app.cli
+# pyhton_app.cli: The package that the python will look for
+# main: This is the function that will be executed 
+#       when you type app in the terminal
+jujuba = "python_app.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
