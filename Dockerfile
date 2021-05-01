@@ -41,4 +41,4 @@ COPY . .
 RUN poetry config virtualenvs.create false && \
     poetry install
 
-CMD bash
+CMD ["jupyter-lab", "--ip=0.0.0.0", "--no-browser"]

@@ -1,7 +1,7 @@
 [tool.poetry]
 # TODO change name
 name = "python-app"
-version = "0.17.3"
+version = "0.1.0"
 description = ""
 # TODO change author
 authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
@@ -9,6 +9,7 @@ authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 click = "^7.1.2"
+jupyterlab = "^3.0.14"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
