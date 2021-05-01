@@ -1,7 +1,7 @@
 [tool.poetry]
 # TODO change name
 name = "python-app"
-version = "0.17.3"
+version = "0.1.0"
 description = ""
 # TODO change author
 authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
