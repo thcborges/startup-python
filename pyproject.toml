@@ -9,12 +9,12 @@ authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 click = "^7.1.2"
-jupyterlab = "^3.0.14"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
 black = "^21.4b1"
 isort = "^5.8.0"
+jupyterlab = "^3.0.14"
 
 [tool.poetry.scripts]
 # TODO it is a good ideia change the 
