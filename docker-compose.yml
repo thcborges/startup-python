@@ -12,5 +12,3 @@ services:
     command: sleep infinity
     volumes:
       - .:$HOME/app
-    ports:
-      - 8888:8888
