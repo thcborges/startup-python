@@ -23,7 +23,7 @@ isort = "^5.8.0"
 # pyhton_app.cli: The package that the python will look for
 # main: This is the function that will be executed 
 #       when you type app in the terminal
-jujuba = "python_app.cli:main"
+app = "python_app.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
