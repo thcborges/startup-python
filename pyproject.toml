@@ -9,11 +9,14 @@ authors = ["Thiago da Cunha Borges <thiago.borges@mobi2buy.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 click = "^7.1.2"
+pyspark = "^3.1.1"
+findspark = "^1.4.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
 black = "^21.4b1"
 isort = "^5.8.0"
+ipython = "^7.23.0"
 
 [tool.poetry.scripts]
 # TODO it is a good ideia change the 
@@ -23,7 +26,7 @@ isort = "^5.8.0"
 # pyhton_app.cli: The package that the python will look for
 # main: This is the function that will be executed 
 #       when you type app in the terminal
-jujuba = "python_app.cli:main"
+app = "python_app.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
