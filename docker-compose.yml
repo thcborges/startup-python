@@ -9,7 +9,8 @@ services:
         UNAME: $USER
     # TODO change container_name
     container_name: python_app_dev
-    command: sleep infinity
+    ports: 
+      - 8888:8888
     volumes:
       - .:$HOME/app
     env_file:

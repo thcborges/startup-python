@@ -55,11 +55,12 @@ ENV SPARK_HOME=/opt/spark
 ENV PATH=$HOME/.poetry/bin:/$HOME/.local/bin:$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 ENV SPARK_LOCAL_IP="127.0.0.1"
 ENV PYSPARK_PYTHON=/usr/local/bin/python
-ENV PYSPARK_DRIVER_PYTHON=$HOME/.local/bin/ipython
+ENV PYSPARK_DRIVER_PYTHON=$HOME/.local/bin/jupyter-lab
+ENV PYSPARK_DRIVER_PYTHON_OPTS="--ip=0.0.0.0 --no-browser"
 
 # Build project
 COPY . .
 RUN poetry config virtualenvs.create false && \
     poetry install
 
-CMD bash
+CMD ["pyspark"]

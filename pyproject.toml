@@ -16,7 +16,7 @@ findspark = "^1.4.2"
 pytest = "^5.4"
 black = "^21.4b1"
 isort = "^5.8.0"
-ipython = "^7.23.0"
+jupyterlab = "^3.0.14"
 
 [tool.poetry.scripts]
 # TODO it is a good ideia change the 
